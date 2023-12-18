@@ -5,6 +5,7 @@ import com.ozkin.practicamarket.domain.repository.ProductRepository;
 import com.ozkin.practicamarket.persistence.crud.ProductoCRUDRepository;
 import com.ozkin.practicamarket.persistence.entity.Producto;
 import com.ozkin.practicamarket.persistence.mapper.ProductMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -13,7 +14,11 @@ import java.util.Optional;
 
 @Repository
 public class ProductoRepository implements ProductRepository {
+
+    @Autowired
     private ProductoCRUDRepository productoCRUDRepository;
+
+    @Autowired
     private ProductMapper mapper;
 
     @Override
