@@ -3,7 +3,7 @@ package com.ozkin.practicamarket;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages={"com.platzimarket.persistence.mapper.ProductMapper"})
+@SpringBootApplication(scanBasePackages={"com.platzi.market.persistence.mapper.ProductMapper"})
 public class PracticaMarketApplication {
 
 
