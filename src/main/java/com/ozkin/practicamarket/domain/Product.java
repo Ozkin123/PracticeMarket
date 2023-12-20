@@ -2,8 +2,8 @@ package com.ozkin.practicamarket.domain;
 
 public class Product {
     private int productId;
-    private System name;
-    private int categopryID;
+    private String name;
+    private int categoryId;
     private double price;
     private int stock;
     private boolean active;
@@ -17,20 +17,20 @@ public class Product {
         this.productId = productId;
     }
 
-    public System getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(System name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public int getCategopryID() {
-        return categopryID;
+    public int getCategoryId() {
+        return categoryId;
     }
 
-    public void setCategopryID(int categopryID) {
-        this.categopryID = categopryID;
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
     }
 
     public double getPrice() {
@@ -64,4 +64,5 @@ public class Product {
     public void setCategory(Category category) {
         this.category = category;
     }
+
 }
