@@ -10,11 +10,11 @@ import java.util.List;
 public class Compra {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_compras")
+    @Column(name = "id_compra")
     private Integer idCompra;
 
-    @Column(name = "id_cleintes")
-    private String idClientes;
+    @Column(name = "id_cliente")
+    private String idCliente;
 
     private LocalDateTime fecha;
 
@@ -39,12 +39,12 @@ public class Compra {
         this.idCompra = idCompra;
     }
 
-    public String getIdClientes() {
-        return idClientes;
+    public String getIdCliente() {
+        return idCliente;
     }
 
-    public void setIdClientes(String idClientes) {
-        this.idClientes = idClientes;
+    public void setIdCliente(String idCliente) {
+        this.idCliente = idCliente;
     }
 
     public LocalDateTime getFecha() {
