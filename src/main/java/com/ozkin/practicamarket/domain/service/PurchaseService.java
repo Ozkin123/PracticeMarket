@@ -3,10 +3,12 @@ package com.ozkin.practicamarket.domain.service;
 import com.ozkin.practicamarket.domain.Purchase;
 import com.ozkin.practicamarket.domain.repository.PurchaseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class PurchaseService {
     @Autowired
     private PurchaseRepository purchaseRepository;
